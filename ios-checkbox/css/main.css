@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+}
+
+.btn .ios-toggle {
+	display: none;
+}
+.checkbox-label {
+	position: relative;
+	display: inline-block;
+	width: 180px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #c8ced5;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.checkbox-label::before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 90px;
+	height: 90px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.ios-toggle:checked + .checkbox-label {
+	transition: 2s;
+	background-color: #72e56f;
+}
+
+
+.ios-toggle:checked + .checkbox-label:before {
+	transition: 2s;
+	left: 85px;
+}
+
